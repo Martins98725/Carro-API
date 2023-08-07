@@ -18,7 +18,7 @@ public class Carro {
     private String placa;
     @Column(name = "quilometragem", nullable = false)
     private Double km;
-    // commit
+    //
 
     public Carro() {
     }
