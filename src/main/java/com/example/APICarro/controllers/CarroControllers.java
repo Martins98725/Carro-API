@@ -15,7 +15,7 @@ import java.util.List;
 public class CarroControllers {
     @Autowired
     private CarroService service;
-    @GetMapping(value = "id", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Carro findById(@PathVariable(value = "id") Long id){
         return service.findById(id);
     }
